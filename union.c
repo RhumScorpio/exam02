@@ -6,7 +6,7 @@
 /*   By: clesaffr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 15:39:50 by clesaffr          #+#    #+#             */
-/*   Updated: 2021/12/16 00:45:42 by clesaffr         ###   ########.fr       */
+/*   Updated: 2023/03/16 12:47:26 by clesaffr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,7 @@ int main(int ac, char **av)
 			j = 0;
 				while (av[i][j])
 				{
-					if (!(ascii[(unsigned char)av[i][j]]) && i == 2)
-					{
-						write(1, &av[i][j], 1);
-						ascii[(unsigned char)av[i][j]] = 1;
-					}
-					if (!(ascii[(unsigned char)av[i][j]]) && i == 1)
+					if (!(ascii[(unsigned char)av[i][j]]))
 					{
 						write(1, &av[i][j], 1);
 						ascii[(unsigned char)av[i][j]] = 1;
